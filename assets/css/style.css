@@ -1,7 +1,7 @@
 body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
-	font-family: Arial;
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
 	color: #777;
 	line-height: 28px;
@@ -10,14 +10,8 @@ body {
 	box-sizing: border-box;
 }
 
-/* Main Page */
-
-
-
-/* General Styling */
-
 h1, h2 {
-	font-family: "Georgia";
+	font-family: 'Georgia', Times, "Times New Roman", serif;
 	color: #4aaaa5;
 	padding-bottom: 30px;
 	font-weight: bold;
@@ -48,7 +42,7 @@ header {
 	display: block;
 	background-color: #4aaaa5;
 	color:#fff;
-	font-family: "Georgia";
+	font-family: 'Georgia', Times, "Times New Roman", serif;
 	font-size: 30px;
 	padding: 0 40px;
 	line-height: 90px;
@@ -84,19 +78,22 @@ nav ul li:first-child a {
 
 .wrapper {
 	width: 960px;
-	margin: 0 auto;
+	margin: auto;
 	clear: both;
 	overflow: hidden;
 }
 
 footer {
+    padding:20px;
+    clear: both;
 	text-align: center;
 	background-color: #777;
 	color: #ccc;
 	line-height: 90px;
 	margin-top: 40px;
 	border-top: 8px solid #4aaaa5;
-	font-size: 12px;
+    font-size: 12px;
+   
 }
 
 .module {
@@ -110,26 +107,8 @@ footer {
 	width: 650px;
 }
 
-#social {
-	width: 270px;
-	float: right;
-	text-align: center;
-}
 
-#social img {
-	height: 60px;
-	width: auto;
-}
-
-#social a {
-	margin-right: 8px;
-}
-
-#social a:last-child {
-	margin-right: 0;
-}
-
-.baby {
+.headshot {
 	float: left;
 	margin-right: 30px;
 }
@@ -206,21 +185,27 @@ input[type=submit] {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-  font-family: "Georgia";
+  font-family: 'Georgia', Times, "Times New Roman", serif;
   font-size: 22px;
 }
 
 /* Hover */
 #logo:hover,
 input[type=submit]:hover {
-  background: #5e7f7e;
+  background: #777;
 }
 
 nav a:hover {
-  color: #5e7f7e;
+  color: #4aaaa5;
 }
 
 .social:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+/* Sticky Footer */
+
+#container {
+	min-height: calc(100vh - 264px);
 }
